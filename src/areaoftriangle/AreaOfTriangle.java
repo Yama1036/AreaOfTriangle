@@ -22,6 +22,7 @@ public class AreaOfTriangle {
         double a,b,c; // ← side lengths.
         double semi = 0; // ← this is variable of semi-paramiter.
         double area; // ← total area.
+        double round; // ← round version of total area.
         
         // use try and catch statement to avoid error.
         
@@ -55,7 +56,11 @@ public class AreaOfTriangle {
                 // calculating the area by using Heron's formula.
                     area = Math.sqrt(semi * (semi - a) * (semi - b) * (semi - c));
                     
-                    System.out.println("The area of this triangle is : " + area + "cm^2");      
+                    System.out.println("The area of this triangle is : " + area + "cm^2");
+                    
+                    round = Math.round(area);
+                    
+                    System.out.println("Round : " + round + "cm^2");
             } 
 }
         catch (Exception e) {
