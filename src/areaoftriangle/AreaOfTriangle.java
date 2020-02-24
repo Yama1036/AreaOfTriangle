@@ -1,7 +1,7 @@
 /*
  * Yama
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * 24/02/2020
+ * This code output the area of the triangle by three different side length.
  */
 
 package areaoftriangle;
