@@ -5,7 +5,7 @@
  */
 
 package areaoftriangle;
-import javax.swing.*; 
+import javax.swing.*;
 /**
  *
  * @author ayyam8774
@@ -25,10 +25,8 @@ public class AreaOfTriangle {
         
         // use try and catch statement to avoid error.
         
-        try 
+        try
         {
-            do
-            {
                 // getting side lengths from user.
                 a = Double.parseDouble(JOptionPane.showInputDialog("Enter Side Lenth A in cm"));
                 b = Double.parseDouble(JOptionPane.showInputDialog("Enter Side Lenth B in cm"));
@@ -36,14 +34,14 @@ public class AreaOfTriangle {
                 
                 // make sure the triangle is Scalene triangle(Every side lenghs are different)
                 if (a == b || a == c || b == c) {
-                    System.out.println("Values of sidelengths must all be different");
+                    System.out.println("Number of sidelengths must all be different");
                     num = 0;
                 } else {
                     num = 1;
                 }
                 
                 
-        } while (num != 0);
+            while (num != 1);
                 {
                     // calculate semi paramiter.
                     semi = (a + b + c) / 2;
@@ -57,10 +55,12 @@ public class AreaOfTriangle {
                 // calculating the area by using Heron's formula.
                     area = Math.sqrt(semi * (semi - a) * (semi - b) * (semi - c));
                     
-                    System.out.println("The area of this triangle is : " + area);      
-            } catch (Exception e)
-            {
-                System.err.println("Impossible side length data entered");
-            }
+                    System.out.println("The area of this triangle is : " + area + "cm^2");      
+            } 
+}
+        catch (Exception e) {
+            System.err.println("Impossible side length data entered...");
+        }
+    }
 }
     
