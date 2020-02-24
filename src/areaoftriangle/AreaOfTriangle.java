@@ -29,9 +29,9 @@ public class AreaOfTriangle {
         try
         {
                 // getting side lengths from user.
-                a = Double.parseDouble(JOptionPane.showInputDialog("Enter Side Lenth A in cm"));
-                b = Double.parseDouble(JOptionPane.showInputDialog("Enter Side Lenth B in cm"));
-                c = Double.parseDouble(JOptionPane.showInputDialog("Enter Side Lenth C in cm"));
+                a = Double.parseDouble(JOptionPane.showInputDialog("Enter Side Length A in cm"));
+                b = Double.parseDouble(JOptionPane.showInputDialog("Enter Side Length B in cm"));
+                c = Double.parseDouble(JOptionPane.showInputDialog("Enter Side Length C in cm"));
                 
                 // make sure the triangle is Scalene triangle(Every side lenghs are different)
                 if (a == b || a == c || b == c) {
